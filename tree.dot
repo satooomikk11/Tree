@@ -1,29 +1,25 @@
 digraph Tree
 {
 
-	node0x5c873c5ed440[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed440 | {date} | {0x5c873c5ed3c0 | 0x5c873c5ed400}}"]
-	node0x5c873c5ed440 -> node0x5c873c5ed3c0
-	node0x5c873c5ed3c0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed3c0 | {banana} | {0x5c873c5ed2c0 | 0x5c873c5ed300}}"]
-	node0x5c873c5ed3c0 -> node0x5c873c5ed2c0
-	node0x5c873c5ed2c0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed2c0 | {apple} | {(nil) | 0x5c873c5ee1c0}}"]
-	node0x5c873c5ed2c0 -> node0x5c873c5ee1c0
-	node0x5c873c5ee1c0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ee1c0 | {apricot} | {(nil) | 0x5c873c5eeae0}}"]
-	node0x5c873c5ee1c0 -> node0x5c873c5eeae0
-	node0x5c873c5eeae0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5eeae0 | {avocado} | {(nil) | (nil)}}"]
-	node0x5c873c5ed3c0 -> node0x5c873c5ed300
-	node0x5c873c5ed300[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed300 | {cherry} | {0x5c873c5eea20 | (nil)}}"]
-	node0x5c873c5ed300 -> node0x5c873c5eea20
-	node0x5c873c5eea20[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5eea20 | {blueberry} | {(nil) | (nil)}}"]
-	node0x5c873c5ed440 -> node0x5c873c5ed400
-	node0x5c873c5ed400[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed400 | {elderberry} | {0x5c873c5ed340 | 0x5c873c5ed380}}"]
-	node0x5c873c5ed400 -> node0x5c873c5ed340
-	node0x5c873c5ed340[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed340 | {fig} | {(nil) | (nil)}}"]
-	node0x5c873c5ed400 -> node0x5c873c5ed380
-	node0x5c873c5ed380[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5ed380 | {kiwi} | {0x5c873c5eea60 | 0x5c873c5eeb20}}"]
-	node0x5c873c5ed380 -> node0x5c873c5eea60
-	node0x5c873c5eea60[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5eea60 | {grape} | {(nil) | 0x5c873c5eeaa0}}"]
-	node0x5c873c5eea60 -> node0x5c873c5eeaa0
-	node0x5c873c5eeaa0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5eeaa0 | {honeydew} | {(nil) | (nil)}}"]
-	node0x5c873c5ed380 -> node0x5c873c5eeb20
-	node0x5c873c5eeb20[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5c873c5eeb20 | {zucchini} | {(nil) | (nil)}}"]
+	node0x57ab2b9b48c0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b48c0 | {сейчас на хайпе?} | {0x57ab2b9b4900 | 0x57ab2b9b4940}}"]
+	node0x57ab2b9b48c0 -> node0x57ab2b9b4900
+	node0x57ab2b9b4900[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4900 | {современный?} | {0x57ab2b9b5e60 | 0x57ab2b9b5e80}}"]
+	node0x57ab2b9b4900 -> node0x57ab2b9b5e60
+	node0x57ab2b9b5e60[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b5e60 | {Жигунов} | {(nil) | (nil)}}"]
+	node0x57ab2b9b4900 -> node0x57ab2b9b5e80
+	node0x57ab2b9b5e80[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b5e80 | {Бурунов} | {(nil) | (nil)}}"]
+	node0x57ab2b9b48c0 -> node0x57ab2b9b4940
+	node0x57ab2b9b4940[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4940 | {молодой?} | {0x57ab2b9b4980 | 0x57ab2b9b4ae0}}"]
+	node0x57ab2b9b4940 -> node0x57ab2b9b4980
+	node0x57ab2b9b4980[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4980 | {русский?} | {0x57ab2b9b49d0 | 0x57ab2b9b4aa0}}"]
+	node0x57ab2b9b4980 -> node0x57ab2b9b49d0
+	node0x57ab2b9b49d0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b49d0 | {снимался в Пиратах} | {0x57ab2b9b4a10 | 0x57ab2b9b4a50}}"]
+	node0x57ab2b9b49d0 -> node0x57ab2b9b4a10
+	node0x57ab2b9b4a10[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4a10 | {Бред Питт} | {(nil) | (nil)}}"]
+	node0x57ab2b9b49d0 -> node0x57ab2b9b4a50
+	node0x57ab2b9b4a50[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4a50 | {Джонни Депп} | {(nil) | (nil)}}"]
+	node0x57ab2b9b4980 -> node0x57ab2b9b4aa0
+	node0x57ab2b9b4aa0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4aa0 | {Павел Прилучный} | {(nil) | (nil)}}"]
+	node0x57ab2b9b4940 -> node0x57ab2b9b4ae0
+	node0x57ab2b9b4ae0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x57ab2b9b4ae0 | {Янковский} | {(nil) | (nil)}}"]
 }

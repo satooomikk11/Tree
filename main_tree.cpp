@@ -1,46 +1,43 @@
 #include <stdio.h>
+#include <stdlib.h> 
 #include <assert.h>
-#include <string.h>
 #include <math.h>
-#include <stdlib.h>
+#include <string.h>
 
 #include "structs.h"
 #include "tree_functions.h"
 #include "tree_dump.h"
+#include "akinator.h"
+
+/*
+Tree* CreateTree()
+{
+    Node* list1 = NodeInit(strdup("Янковский"),       NULL, NULL);
+    Node* list2 = NodeInit(strdup("Павел Прилучный"), NULL, NULL);
+    Node* list3 = NodeInit(strdup("Джонни Депп"),     NULL, NULL);
+    Node* list4 = NodeInit(strdup("Бурунов"),         NULL, NULL);
+
+    Node* node3 = NodeInit(strdup("русский?"), list3, list2);
+    Node* node2 = NodeInit(strdup("молодой?"), node3, list1);
+    Node* node1 = NodeInit(strdup("сейчас на хайпе?"), list1, node2);
+
+    Node* root = node1;
+
+    return TreeInit(7, root); 
+}
+*/
 
 int main()
-{ 
-    // вот тут мы просто создаём листы (т.е крайние элементы)
-    Node* leaf1 = NodeInit(strdup("apple"),  NULL, NULL);
-    Node* leaf2 = NodeInit(strdup("cherry"), NULL, NULL);
-    Node* leaf3 = NodeInit(strdup("fig"),    NULL, NULL);
-    Node* leaf4 = NodeInit(strdup("kiwi"),   NULL, NULL);
+{
+    Tree* tree;
+    TreeLoadFromFile(tree, "tree_data.txt"); 
+    // Tree* tree = CreateTree();
+    TreeDump(tree, "tree.dot");
+
+    Akinator(tree);
+    TreeSaveToFile(tree, "tree_data.txt");
     
-    // тут создаём две ветки и указываем, какие листы на какой ветке
-    Node* node1 = NodeInit(strdup("banana"),     leaf1, leaf2); // левая  ветка
-    Node* node2 = NodeInit(strdup("elderberry"), leaf3, leaf4); // правая ветка
-    
-    // создаем корень и указываем его ветке
-    Node* root = NodeInit(strdup("date"), node1, node2);
-    
-    Tree* tree = TreeInit(7, root); // 7 узлов всего
-    
-    // а вот тут уже вставляем узлы в ветку в левую ветку (к banana)
-    TreeInsertNode(tree, strdup("apricot"));   // должен пойти влево  от banana
-    TreeInsertNode(tree, strdup("blueberry")); // должен пойти вправо от banana
-    
-    // добавляем в правую ветку (к elderberry)  
-    TreeInsertNode(tree, strdup("grape"));    // должен пойти влево  от elderberry
-    TreeInsertNode(tree, strdup("honeydew")); // должен пойти вправо от elderberry
-    
-    // добавляем узлы, которые создадут новые уровни
-    TreeInsertNode(tree, strdup("avocado"));  // пойдет глубоко влево
-    TreeInsertNode(tree, strdup("zucchini")); // пойдет глубоко вправо
-    
-    char buffer[1024];
-    PrintTree(tree->root, buffer);
-    
-    TreeDestroy(tree);
+    // TreeDestroy(tree);
 
     return 0;
 }
