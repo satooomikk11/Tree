@@ -33,7 +33,7 @@ TreeErr_t TreeDump(Tree *tree, const char *filename)
     }
 
     // используем микросекунды для уникальности имени файла
-    struct timeval tv = {0};
+    struct timeval tv = {0, 0};
     gettimeofday(&tv, NULL);
     long timestamp    = tv.tv_sec;
     long microseconds = tv.tv_usec;
@@ -78,17 +78,17 @@ TreeErr_t DotGenerateTreeNode(Node *node, FILE *file)
 
     fprintf(file, "\tnode%p[shape=Mrecord, style=\"rounded, filled\", fillcolor=\"lightblue\", "
                   "label=\"{%p | {%s} | {%p | %p}}\"]\n", 
-                  node, node, node->value, node->left, node->right);
+                  (void*)node, (void*)node, node->value, (void*)node->left, (void*)node->right);
 
     if (node->left)
     {
-        fprintf(file, "\tnode%p -> node%p\n", node, node->left);
+        fprintf(file, "\tnode%p -> node%p\n", (void*)node, (void*)node->left);
         DotGenerateTreeNode(node->left, file);
     }
 
     if (node->right)
     {
-        fprintf(file, "\tnode%p -> node%p\n", node, node->right);
+        fprintf(file, "\tnode%p -> node%p\n", (void*)node, (void*)node->right);
         DotGenerateTreeNode(node->right, file);
     }
 
