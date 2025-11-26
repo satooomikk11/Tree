@@ -1,25 +1,25 @@
 digraph Tree
 {
 
-	node0x503000000280[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000280 | {сейчас на хайпе?} | {0x5030000002e0 | 0x503000000370}}"]
-	node0x503000000280 -> node0x5030000002e0
-	node0x5030000002e0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000002e0 | {современный?} | {0x503000000310 | 0x503000000340}}"]
-	node0x5030000002e0 -> node0x503000000310
-	node0x503000000310[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000310 | {Жигунов} | {(nil) | (nil)}}"]
-	node0x5030000002e0 -> node0x503000000340
-	node0x503000000340[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000340 | {Бурунов} | {(nil) | (nil)}}"]
-	node0x503000000280 -> node0x503000000370
-	node0x503000000370[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000370 | {молодой?} | {0x5030000003a0 | 0x503000000550}}"]
-	node0x503000000370 -> node0x5030000003a0
-	node0x5030000003a0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000003a0 | {русский?} | {0x5030000003d0 | 0x5030000004f0}}"]
-	node0x5030000003a0 -> node0x5030000003d0
-	node0x5030000003d0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000003d0 | {снимался в Пиратах} | {0x503000000430 | 0x503000000490}}"]
-	node0x5030000003d0 -> node0x503000000430
-	node0x503000000430[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000430 | {Бред Питт} | {(nil) | (nil)}}"]
-	node0x5030000003d0 -> node0x503000000490
-	node0x503000000490[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000490 | {Джонни Депп} | {(nil) | (nil)}}"]
-	node0x5030000003a0 -> node0x5030000004f0
-	node0x5030000004f0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000004f0 | {Павел Прилучный} | {(nil) | (nil)}}"]
-	node0x503000000370 -> node0x503000000550
-	node0x503000000550[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000550 | {Янковский} | {(nil) | (nil)}}"]
+	node0x503000000070[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000070 | {сейчас на хайпе?} | {0x5030000000d0 | 0x503000000160}}"]
+	node0x503000000070 -> node0x5030000000d0
+	node0x5030000000d0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000000d0 | {современный?} | {0x503000000100 | 0x503000000130}}"]
+	node0x5030000000d0 -> node0x503000000100
+	node0x503000000100[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000100 | {Жигунов} | {(nil) | (nil)}}"]
+	node0x5030000000d0 -> node0x503000000130
+	node0x503000000130[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000130 | {Бурунов} | {(nil) | (nil)}}"]
+	node0x503000000070 -> node0x503000000160
+	node0x503000000160[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000160 | {молодой?} | {0x503000000190 | 0x503000000340}}"]
+	node0x503000000160 -> node0x503000000190
+	node0x503000000190[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000190 | {русский?} | {0x5030000001c0 | 0x5030000002e0}}"]
+	node0x503000000190 -> node0x5030000001c0
+	node0x5030000001c0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000001c0 | {снимался в Пиратах} | {0x503000000220 | 0x503000000280}}"]
+	node0x5030000001c0 -> node0x503000000220
+	node0x503000000220[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000220 | {Бред Питт} | {(nil) | (nil)}}"]
+	node0x5030000001c0 -> node0x503000000280
+	node0x503000000280[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000280 | {Джонни Депп} | {(nil) | (nil)}}"]
+	node0x503000000190 -> node0x5030000002e0
+	node0x5030000002e0[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x5030000002e0 | {Павел Прилучный} | {(nil) | (nil)}}"]
+	node0x503000000160 -> node0x503000000340
+	node0x503000000340[shape=Mrecord, style="rounded, filled", fillcolor="lightblue", label="{0x503000000340 | {Янковский} | {(nil) | (nil)}}"]
 }

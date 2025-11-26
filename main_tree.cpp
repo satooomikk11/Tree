@@ -9,7 +9,9 @@
 #include "tree_dump.h"
 #include "akinator.h"
 
-Tree* CreateTree()
+Tree* CreateDefaultTree();
+
+Tree* CreateDefaultTree()
 {
     Node* list1 = NodeInit(strdup("Янковский"),       NULL, NULL);
     Node* list2 = NodeInit(strdup("Павел Прилучный"), NULL, NULL);
@@ -27,14 +29,28 @@ Tree* CreateTree()
 
 int main()
 {
-    Tree* tree = CreateTree();
-    TreeLoadFromFile(tree, "tree_data.txt"); 
+    Tree* tree = NULL;
+    
+    Tree* loaded_tree = TreeInit(0, NULL);
+    TreeErr_t load_result = TreeLoadFromFile(loaded_tree, "tree_data.txt");
+    
+    if (load_result == TREE_OK && loaded_tree->root != NULL)
+    {
+        printf("Игрыем на дереве из файла\n");
+        tree = loaded_tree;
+    }
+    else
+    {
+        printf("Не удалось загрузить из файла, играем на стандартном дереве\n");
+        TreeDestroy(loaded_tree);
+        tree = CreateDefaultTree();
+    }
+        
     TreeDump(tree, "tree.dot");
-
     Akinator(tree);
     TreeSaveToFile(tree, "tree_data.txt");
     
-    // TreeDestroy(tree);
+    TreeDestroy(tree);
 
     return 0;
 }
